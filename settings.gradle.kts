@@ -1,1 +1,1 @@
-rootProject.name = "sduiBackEnd"
+rootProject.name = "SDUIBackEndPrototype"
