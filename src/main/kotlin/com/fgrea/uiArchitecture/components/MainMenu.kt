@@ -1,5 +1,6 @@
 package com.fgrea.uiArchitecture
 
+import com.fgrea.uiArchitecture.*
 import com.fgrea.features.ui.model.*
 
 fun mainMenu(params: Map<String, UIProperty> = mapOf()): UIComponent {

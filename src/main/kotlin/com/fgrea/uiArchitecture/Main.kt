@@ -3,7 +3,6 @@ package com.fgrea.uiArchitecture
 import com.fgrea.features.ui.model.*
 
 fun main(): UIComponent {
-    
     return UIComponent(
         type = "Container",  
         properties = mapOf(
@@ -20,8 +19,15 @@ fun main(): UIComponent {
             "className" to UIProperty.StringValue("w-full h-screen")
         ),
         children = listOf(
-            eventsPrimitive(),
-            mainMenu()
+            //UIComponent(
+            //    type = "SduiCall",
+            //    properties = mapOf("macroComponentName" to "EventPrimitive")
+            //),
+            mainMenu(),
+            //UIComponent(
+            //    type = "SduiCall",
+            //    properties = mapOf("macroComponentName" to "MainMenu")
+            //)
         )
     )
 }
