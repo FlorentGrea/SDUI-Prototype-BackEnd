@@ -29,6 +29,7 @@ object ComponentRegistry {
     )
 
     fun getComponent(name: String, mapPoint: MapPoint? = null): UIComponent {
-        return components[name.lowercase()]?.create(mapPoint) ?: throw IllegalArgumentException("Component not found: $name")
+        val normalizedName = name.split("?")[0].lowercase() // Get base name without query params and convert to lowercase
+        return components[normalizedName]?.create(mapPoint) ?: throw IllegalArgumentException("Component not found: $name")
     }
 }
